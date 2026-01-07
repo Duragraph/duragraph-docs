@@ -1,0 +1,26 @@
+---
+import { ScalarComponent } from '@scalar/astro';
+---
+
+<ScalarComponent
+  configuration={{
+    url: '/openapi.yaml',
+    pageTitle: 'DuraGraph API Reference',
+    theme: 'purple',
+    hideModels: false,
+    hideDownloadButton: false,
+    darkMode: true,
+    metaData: {
+      title: 'DuraGraph API Reference',
+      description:
+        'Interactive API documentation for DuraGraph - LangGraph Cloud-compatible AI workflow orchestration',
+    },
+    customCss: `
+      .scalar-app {
+        --scalar-color-accent: #f97316;
+        --scalar-color-1: #ea580c;
+        --scalar-color-2: #c2410c;
+      }
+    `,
+  }}
+/>
